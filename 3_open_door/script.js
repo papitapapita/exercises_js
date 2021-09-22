@@ -7,15 +7,15 @@ no.addEventListener('click', function(){No()});
 
 function Yes()
 {
-    alert("Great! it's on");
+    alert("You should open the door");
+    do
+    {
+        correct = prompt("Have you opened the door? (y/n)");
+    }while((correct != 'n' && correct != 'y') || correct == 'n')
+    No();
 }
 
 function No()
 {
-    alert("You should search for matchsticks");
-    do
-    {
-        correct = prompt("Have you found some?(y/n)");
-    }while((correct != 'n' && correct != 'y') || correct == 'n')
-    Yes();
+    alert("Great, get it in the store");
 }
